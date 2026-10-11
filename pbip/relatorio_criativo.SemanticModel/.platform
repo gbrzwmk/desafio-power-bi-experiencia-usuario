@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "relatorio_criativo"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b7e7ceed-40f4-43cb-8588-410371dee0ad"
+  }
+}
