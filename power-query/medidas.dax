@@ -1,0 +1,29 @@
+// Medidas criadas na tabela financials (desafio Experiência do Usuário)
+
+Total Sales = SUM(financials[ Sales])
+// formato: #,0.00
+
+Total Profit = SUM(financials[Profit])
+// formato: #,0.00
+
+Margem de Lucro = DIVIDE([Total Profit], [Total Sales])
+// formato: 0.0%
+
+Vendas Brutas = SUM(financials[Gross Sales])
+// formato: #,0.00
+
+Total de Descontos = SUM(financials[Discounts])
+// formato: #,0.00
+
+Unidades Vendidas = SUM(financials[Units Sold])
+// formato: #,0
+
+Ticket Médio = DIVIDE([Total Sales], COUNTROWS(financials))
+// formato: #,0.00
+
+Lucro Ano Anterior = CALCULATE([Total Profit], SAMEPERIODLASTYEAR(financials[Date]))
+// formato: #,0.00
+
+Variação Lucro vs Ano Anterior = DIVIDE([Total Profit] - [Lucro Ano Anterior], [Lucro Ano Anterior])
+// formato: 0.0%
+
